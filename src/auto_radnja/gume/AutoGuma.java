@@ -104,6 +104,8 @@ public class AutoGuma {
 	 * Postavlja novu vrednost za širinu gume
 	 * 
 	 * @param sirina nova širina gume
+	 * @throws java.lang.IllegalArgumentException ako je širina manja od 135 ili
+	 *                                            veća od 355
 	 */
 	public void setSirina(int sirina) {
 		if (sirina < 135 && sirina > 355)
@@ -124,8 +126,8 @@ public class AutoGuma {
 	 * Postavlja novu vrednost za visinu gume.
 	 * 
 	 * @param visina nova visina gume
-	 * @throws java.lang.IllegalArgumentException ako visina nije veća od 25cm ili
-	 *                                            nije manja od 95cm
+	 * @throws java.lang.IllegalArgumentException ako visina manja od 25cm ili veća
+	 *                                            od 95cm
 	 */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
